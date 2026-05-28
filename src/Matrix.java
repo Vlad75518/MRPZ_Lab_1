@@ -1,7 +1,9 @@
 public class Matrix {
     public static void main(String[] args) {
 
-        int[][] SquareMatrix = { // двовимірний масив-матриця
+        System.out.println("Лабораторну роботу виконав: Талашов В.В.");
+
+        int[][] A = { // двовимірний масив-матриця
                 {5, 3, 7, 1},
                 {2, 8, 4, 6},
                 {9, 1, 3, 2},
@@ -14,11 +16,11 @@ public class Matrix {
 
         for (int i = 0; i < N; i++) {        // перебираємо рядки
             for (int j = 0; j < N; j++) {    // перебираємо стовпці
-                System.out.print(SquareMatrix[i][j] + "\t"); // друкуємо поточний елемент матриці
+                System.out.print(A[i][j] + "\t"); // друкуємо поточний елемент матриці
                 if (j > i) {                 // елемент матриці вище головної діагоналі
-                    sumAbove += SquareMatrix[i][j];
+                    sumAbove += A[i][j];
                 } else if (j < i) {          // елемент матриці нижче головної діагоналі
-                    sumBelow += SquareMatrix[i][j];
+                    sumBelow += A[i][j];
                 }
                 // якщо j == i — це елементи головної діагоналі, пропускаємо
             }
